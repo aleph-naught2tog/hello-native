@@ -1,7 +1,5 @@
 # hello-native
 
-# react-native notes
-
 ## misc notes
 
 * no usable QR data prob means you need the expo client installed
