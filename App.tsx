@@ -6,7 +6,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Text>
-          ping pong?
+          ping
         </Text>
         <Text>Open up App.js to start working on your app!</Text>
       </View>

@@ -1,18 +1,23 @@
 # hello-native
 
-## misc notes
+## quickstart
 
-* no usable QR data prob means you need the expo client installed
+Assuming you've done `npm install` to install dependencies:
+
+1. `npm start` to start app
+2. optional: `npx tsc --watch` in a new tab if you want your typechecking in a terminal window (vs, say, inline in VSCode)
+3. Open app
+   * on phone via QR code and expo-client
+   * in simulator with xcode
 
 ## requirements
 
+* `node`
 * `expo-cli`: you can install it globally if you want with `npm install --global expo-cli`, or if you run `npm install` in a project that requires it, it will also prompt you to install it.
 * expo client: for running the app on your device
-  * [iOs](https://itunes.apple.com/app/apple-store/id982107779)
+  * [iOS](https://itunes.apple.com/app/apple-store/id982107779)
   * [android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www)
 * xcode, if you want to run it on the ios simulator. to open the debug tools in the simulator, use `cmd-D`; on a device, shake it real hard.
-
-For something similar to `create-react-app`, you need the expo CLI itself to bootstrap. For that you can run: `npm install --global expo-cli` -- otherwise you should be able to just pull this down and run `npm start`.
 
 ## working on a project
 
@@ -25,6 +30,8 @@ once it's loaded, you scan the qr code with your phone; on an iPhone, you just n
 ![open in expo](readme_images/open_in_expo.PNG)
 
 If you'd rather use the xcode simulator, click the "Run on iOS simulator" link in the dev server page. If you get an error, run `sudo xcode-select -s /Applications/Xcode.app` in your terminal -- nothing will change visibly, then try pressing the button again.
+
+I had to quit Simulator once after that and then try reopening it again; then it said it was downloading the expo client onto the simulator device and things were fine.
 
 ### fyi
 
